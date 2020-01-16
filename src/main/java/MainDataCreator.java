@@ -99,8 +99,7 @@ public class MainDataCreator {
 
 					int index = startIndex * amountTreeMaps + currentIndex + startIndex;
 					TMNode root = new RandomTreeMapNode(new Random(), 1000f, 1000f, 4, 0);
-					
-					System.out.println("Done Create Tree: " + index + root.toString());
+					System.out.println("Done Create Tree: " + index);
 					TreeMap treemap = new TreeMap(root);
 					TMView view = buildNewView(treemap);
 					view.setPreferredSize(new Dimension(300, 300));
